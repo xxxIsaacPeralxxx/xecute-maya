@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'F:\Kumaresan\Dev\Python\Executar\WIN.ui'
 #
-# Created: Mon Jan 09 11:54:55 2012
+# Created: Tue Jan 17 11:24:32 2012
 #      by: PyQt4 UI code generator 4.8.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -203,7 +203,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName(_fromUtf8("scrollArea"))
         self.scrollAreaWidgetContents = QtGui.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 479, 308))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 442, 308))
         self.scrollAreaWidgetContents.setObjectName(_fromUtf8("scrollAreaWidgetContents"))
         self.gridLayout_17 = QtGui.QGridLayout(self.scrollAreaWidgetContents)
         self.gridLayout_17.setObjectName(_fromUtf8("gridLayout_17"))
@@ -382,7 +382,7 @@ class Ui_MainWindow(object):
         self.toolBox.setFrameShadow(QtGui.QFrame.Sunken)
         self.toolBox.setObjectName(_fromUtf8("toolBox"))
         self.genlstpage = QtGui.QWidget()
-        self.genlstpage.setGeometry(QtCore.QRect(0, 0, 171, 447))
+        self.genlstpage.setGeometry(QtCore.QRect(0, 0, 96, 77))
         self.genlstpage.setObjectName(_fromUtf8("genlstpage"))
         self.gridLayout_8 = QtGui.QGridLayout(self.genlstpage)
         self.gridLayout_8.setObjectName(_fromUtf8("gridLayout_8"))
@@ -393,7 +393,7 @@ class Ui_MainWindow(object):
         self.gridLayout_8.addWidget(self.ui_gensclst, 0, 0, 1, 1)
         self.toolBox.addItem(self.genlstpage, _fromUtf8(""))
         self.advlstpage = QtGui.QWidget()
-        self.advlstpage.setGeometry(QtCore.QRect(0, 0, 171, 447))
+        self.advlstpage.setGeometry(QtCore.QRect(0, 0, 96, 77))
         self.advlstpage.setObjectName(_fromUtf8("advlstpage"))
         self.gridLayout_9 = QtGui.QGridLayout(self.advlstpage)
         self.gridLayout_9.setObjectName(_fromUtf8("gridLayout_9"))
@@ -404,7 +404,7 @@ class Ui_MainWindow(object):
         self.gridLayout_9.addWidget(self.ui_advsclst, 0, 0, 1, 1)
         self.toolBox.addItem(self.advlstpage, _fromUtf8(""))
         self.tmplstpage = QtGui.QWidget()
-        self.tmplstpage.setGeometry(QtCore.QRect(0, 0, 171, 447))
+        self.tmplstpage.setGeometry(QtCore.QRect(0, 0, 96, 77))
         self.tmplstpage.setObjectName(_fromUtf8("tmplstpage"))
         self.gridLayout_10 = QtGui.QGridLayout(self.tmplstpage)
         self.gridLayout_10.setObjectName(_fromUtf8("gridLayout_10"))
@@ -455,7 +455,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(2)
+        self.tabWidget.setCurrentIndex(5)
         self.tabWidget_2.setCurrentIndex(0)
         self.toolBox.setCurrentIndex(3)
         QtCore.QObject.connect(self.toolButton_4, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.terminator)
@@ -618,29 +618,23 @@ class Ui_MainWindow(object):
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; font-weight:600;\">XecuteMaya - v2b</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; font-weight:600;\">XecuteMaya - v2.0b</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">version 2.0 (Beta)</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-weight:600;\"></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; font-weight:600;\">For supporting 3D artist around the world with easy interface for maya automation.</span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-weight:600;\"></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; font-weight:600;\">by</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Kumaresan Lakshmanan</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Raja Vijayaraman</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Praveen Venkatraman</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Muthu Kumaran</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-weight:600;\"></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; font-weight:600;\">Licence</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"http://opensource.org/licenses/Python-2.0\"><span style=\" font-size:8pt; text-decoration: underline; color:#0000ff;\">Python License (Python-2.0)</span></a></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; text-decoration: underline; color:#0000ff;\"></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; font-weight:600;\">Links</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Project Home: </span><a href=\"https://groups.google.com/group/projectlra\"><span style=\" font-size:8pt; text-decoration: underline; color:#0000ff;\">http://code.google.com/p/lra/</span></a></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Discussion:</span><span style=\" font-size:8pt; font-weight:600;\"> </span><a href=\"https://groups.google.com/group/projectlra\"><span style=\" font-size:8pt; text-decoration: underline; color:#0000ff;\">https://groups.google.com/group/projectlra</span></a></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Help:</span><span style=\" font-size:8pt; font-weight:600;\"> </span><a href=\"http://code.google.com/p/lra/wiki/UserDocument\"><span style=\" font-size:8pt; text-decoration: underline; color:#0000ff;\">http://code.google.com/p/lra/wiki/UserDocument</span></a></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Report Issues: </span><a href=\"http://code.google.com/p/lra/issues/list\"><span style=\" font-size:8pt; text-decoration: underline; color:#0000ff;\">http://code.google.com/p/lra/issues/list</span></a></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Project Home: </span><a href=\"http://code.google.com/p/xecute-maya/\"><span style=\" font-size:8pt; text-decoration: underline; color:#0000ff;\">http://code.google.com/p/xecute-maya/</span></a></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Help:</span><span style=\" font-size:8pt; font-weight:600;\"> </span><a href=\"http://code.google.com/p/xecute-maya/wiki/UserDocument\"><span style=\" font-size:8pt; text-decoration: underline; color:#0000ff;\">http://code.google.com/p/xecute-maya/wiki/UserDocument</span></a></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Report Issues: </span><a href=\"http://code.google.com/p/xecute-maya/issues/list\"><span style=\" font-size:8pt; text-decoration: underline; color:#0000ff;\">http://code.google.com/p/xecute-maya/issues/list</span></a></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-weight:600;\"></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; font-weight:600;\">Contact</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"mailto:projectlra@googlegroups.com\"><span style=\" font-size:8pt; text-decoration: underline; color:#0000ff;\">projectlra@googlegroups.com</span></a></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"kaymartix@gmail.com\"><span style=\" font-size:8pt; text-decoration: underline; color:#0000ff;\">kaymartix@gmail.com</span></a></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QtGui.QApplication.translate("MainWindow", "About XM", None, QtGui.QApplication.UnicodeUTF8))
         self.dockWidget_2.setWindowTitle(QtGui.QApplication.translate("MainWindow", "Tool Box", None, QtGui.QApplication.UnicodeUTF8))
         self.ui_gensclst.setSortingEnabled(False)

@@ -7,6 +7,18 @@ from time import gmtime, strftime,localtime
 import re, os, sys, sip
 import xtools
 
+
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+
+import warnings
+with warnings.catch_warnings():
+    warnings.filterwarnings("ignore",category=DeprecationWarning)
+    import md5, sha
+
+import warnings
+warnings.filterwarnings("ignore")
+
 def main():
     app = QApplication(sys.argv)
     w = MyWindow()

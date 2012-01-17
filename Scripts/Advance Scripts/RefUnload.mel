@@ -1,0 +1,9 @@
+
+string $refs[] = `ls -type "reference"`;
+
+for ($itm in $refs)
+{
+file -unloadReference $itm;
+}
+
+file -s;

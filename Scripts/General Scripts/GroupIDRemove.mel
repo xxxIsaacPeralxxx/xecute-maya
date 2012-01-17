@@ -1,0 +1,36 @@
+/*
+Group ID Visual Remove
+
+*/
+
+
+
+// create a file called maya.lock in the tmp directory
+$lock = ( `internalVar -userTmpDir` + "maya.lock" );
+// create a filehandle for writing
+$fileId=`fopen $lock "w"`;
+// close the filehandle
+fclose $fileId;
+
+
+
+
+
+
+string $ix[] = `ls -type "groupId"`;
+int $donow = 100;
+
+for($i=0;$i<$donow;$i++)
+{
+if (!`exists $lock`) break;
+print ("\n" + $i + "/" + $donow);
+print " .. Delete...";
+print $ix[$i];
+delete $ix[$i];
+}
+
+print ("\nRemaining: " + (size($ix)-$donow));
+
+	if (`exists $lock`) {
+		sysFile -delete $lock;
+	}

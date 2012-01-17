@@ -1,0 +1,27 @@
+string $fileslist[] = `ls -type "file"`;
+int $found=0;
+int $missing=0;
+int $total=0;
+print ("\nFile Texture Info\n-----------------\n");
+
+for ($itm in $fileslist)
+{
+$total++;
+	$gfile = `getAttr ($itm + ".fileTextureName")`;
+	if (`file -q -exists $gfile`)
+	{
+		print ("\nFound: "+ $gfile);
+		$found++;
+	}
+	else
+	{
+		print ("\nMissing: "+ $gfile);
+		$missing++;
+	}	
+}
+
+print ("\n\n---------\n");
+print ("\nTotal: " + $total);
+print ("\nFound: " + $found);
+print ("\nMissing: " + $missing);
+

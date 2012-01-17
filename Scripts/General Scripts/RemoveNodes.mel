@@ -1,0 +1,69 @@
+
+/*
+Remove  unused nodes
+
+This file will be modified based on department who need file optimization.
+
+
+*/
+
+
+$labelx = "Unknowns ";
+$kx = `ls -type "unknown"`;
+
+int $cnt = `size($kx)`;
+print ("\n\nNo.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+catch(`delete $kx`);
+
+
+$labelx = "displayLayer " ;
+$kx = `ls -type "displayLayer"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+catch(`delete $kx`);
+
+$labelx = "displayLayerManager" ;
+$kx = `ls -type "displayLayerManager"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+catch(`delete $kx`);
+
+
+
+$labelx = "reference" ;
+$kx = `ls -type "reference"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+lockNode -lock 0 $kx;
+catch(`delete $kx`);
+
+
+
+
+$labelx = "audio " ;
+$kx = `ls -type "audio"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+catch(`delete $kx`);
+
+
+
+
+
+print "\n\nFile Save Process...\n";
+file -s;
+print "\n\nFile Saved!!!\n";

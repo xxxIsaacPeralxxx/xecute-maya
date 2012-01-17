@@ -1,0 +1,218 @@
+/*
+
+Saturday, September 19, 2009
+File Texture Processor
+
+
+This will search file nodes in your scene ...
+Finds the image links and search those images from   SEARCHPATHS[]  specified! and copy them to DESTIPATH.
+And also changes image links to new path!
+
+Caution:
+Slashes in your path must be / and not windows native style slash \
+
+
+
+*/
+
+
+string $destipath = "C:/Documents and Settings/Administrator/My Documents/maya/projects/default/sourceimages";
+string $searchpaths[] =	{
+		"C:/maya/z",
+		"G:/Kumaresan/MyPython/Executar",
+		"//bck1/SourceImage/ForAnimator/JPGVersion",
+		"//bck2/SourceImage/ForAnimator",
+		"C:/"
+		};
+
+				
+print "\n";
+print "\nFile Texture Process";
+print "\n--------------------";
+print "\n";
+print ("\nNew Destination: " + $destipath);
+print "\n";
+string $fileslist[] = `ls -type "file"`;
+string $filenames[];
+clear $filenames;
+string $shorterList[];
+clear $shorterList;
+string $missingfilelist[];
+clear $missingfilelist;
+string $nfileext = "";
+string $nfilename = "";
+string $nfilepath = "";
+string $nfile="";
+
+$c=0;
+$found=0;
+$missing=0;
+$overwrite=0;
+$newcopy=0;
+
+$put="";
+
+if (`filetest -w $destipath`)
+{
+	for ($itm in $fileslist)
+	{
+		$gfile = `getAttr ($itm + ".fileTextureName")`;
+		$filenames[$c++] = $gfile;
+		$nfilepath = dirname($gfile);
+		$nfilename = basenameEx($gfile);
+		$nfileext = fileExtension($gfile);
+		$nfile = $nfilename + "." + $nfileext ;
+		print ("\n---------------------\n");
+		print ("Processing... " + $nfile + "\n");
+		string $allsearchpaths[] = $searchpaths;
+		$allsearchpaths[`size($searchpaths)`] = $nfilepath;
+		
+		$tempsearch = 0;
+		for ($searchpath in $allsearchpaths)
+		{
+
+		print ("\nSearching... " + $searchpath);
+		int $res = searchNCopy($nfile, $searchpath, $destipath);
+		int $foundgonextfile = 0;
+
+		switch ($res)
+			{
+			case 0:
+				print "\nUnknown error occured!\n";
+				break;
+			case 1:
+				print "\nFound and Copied!\n";
+				setAttr -type "string" ($itm + ".fileTextureName") (pathadder($nfile, $destipath));
+				$foundgonextfile = 1;
+				$tempsearch = 1;
+				$newcopy++;
+				break;
+			case 2:
+				print "\nFound and Updated!\n";
+				setAttr -type "string" ($itm + ".fileTextureName") (pathadder($nfile, $destipath));
+				$foundgonextfile = 1;
+				$tempsearch = 1;
+				$overwrite++;
+				break;
+			case 3:
+				print "\nFound, but could not Update!\n";
+				break;
+			case 4:
+				print "\nFound, but could not Copy!\n";
+				break;
+			case 5:
+				print "\nNot Found!\n";
+				break;
+			}	
+
+			if ($foundgonextfile)
+				break;
+		}
+		
+		if($tempsearch)
+		{
+			$found++;
+		}
+		else
+		{
+			$missing++;
+			$missingfilelist[$missing] = $gfile;
+		}
+
+	}
+}
+else
+{
+	print ("\nDestination could not be reached. Check the path: " + $destipath);
+}
+
+$shorterList = `stringArrayRemoveDuplicates($filenames)`;
+print "\n";
+print "\n";
+print "\nScene Texture Info:\n";
+print ("----------------------");
+print ("\nTotal Texture Links: " + size($fileslist));
+print "\n";
+print ("\tFound Links: " + $found);
+print "\n";
+print ("\tMissing Links: " + $missing);
+print "\n";
+print "\nFile Copy Info:\n";
+print ("----------------------");
+print "\n";
+print ("Copied files: " + $newcopy);
+print "\n";
+print ("Updated files: " + $overwrite);
+print "\n";
+print ("\nMissing Links: " + $missing + "\n");
+print ("----------------------");
+for ($its in $missingfilelist)
+	print ($its+"\n");
+print "\nAdditional Info:\n";
+print ("----------------------");
+print ("\nDuplicate Texture Links: " + (size($fileslist) - size($shorterList)));
+
+global proc int searchNCopy(string $searchfile, string $searchpath, string $copydesti)
+{
+int $opres=0;
+
+$src = pathadder($searchfile, $searchpath);
+$dst = pathadder($searchfile, $copydesti);
+
+	if (`file -q -exists $src`)
+	{
+		if (`file -q -exists $dst`)
+		{
+			$probs = catch(`sysFile -copy  $dst $src`);
+			if ($probs)
+				$opres= 3;
+			else
+				$opres= 2;
+		}
+		else
+		{
+			$probs = catch(`sysFile -copy  $dst $src`);
+			if ($probs)
+				$opres= 4;
+			else
+				$opres= 1;
+		}
+	}	
+	else
+		$opres= 5;
+
+return $opres;
+}
+
+
+global proc int searchNinform(string $searchfile, string $desti)
+{
+int $r = 0;
+string $f = pathadder($searchfile,$desti);
+if (`file -q -exists $f`)
+	$r = 1;
+else
+	$r = 0;
+return $r;
+}
+
+global proc string pathadder(string $nfile, string $destipath )
+{
+
+string $desti = "";
+
+if (endString($destipath, 1) == "/")
+	$desti = $destipath + $nfile;
+else
+	$desti = $destipath + "/" + $nfile;
+
+return $desti;
+
+}
+
+
+
+
+print "\n\nFile Save Process...\n";
+file -s;
+print "\n\nFile Saved!!!\n";

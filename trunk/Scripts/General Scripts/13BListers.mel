@@ -1,0 +1,856 @@
+string $kx[];
+
+print ("\n\n----------------------------------------------------\n");
+print("\n\t\tNodes summary");
+print ("\n\n----------------------------------------------------");
+
+
+$labelx = "Unknowns ";
+$kx = `ls -type "unknown"`;
+
+int $cnt = `size($kx)`;
+print ("\n\nNo.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+$labelx = "groupIDs";
+$kx = `ls -type "groupId"`;
+
+int $cnt = `size($kx)`;
+print ("\n\nNo.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+$labelx = "displayLayer " ;
+$kx = `ls -type "displayLayer"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+
+
+$labelx = "displayLayerManager" ;
+$kx = `ls -type "displayLayerManager"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "reference" ;
+$kx = `ls -type "reference"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+
+
+
+
+
+$labelx = "audio " ;
+$kx = `ls -type "audio"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+
+
+
+
+/*
+
+$labelx = "FurGlobals ";
+$kx = `ls -type "FurGlobals"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "FurDescription ";
+$kx = `ls -type "FurDescription"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+
+
+*/
+
+
+$labelx = "nCloth " ;
+$kx = `ls -type "nCloth"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "nucleus " ;
+$kx = `ls -type "nucleus"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+
+
+$labelx = "nComponent" ;
+$kx = `ls -type "nComponent"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+
+
+
+
+
+
+
+
+$labelx = "fluid" ;
+$kx = `ls -type "fluidShape"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "fluidEmitter" ;
+$kx = `ls -type "fluidEmitter"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "HairPaints " ;
+$kx = `ls -type "pfxHair"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "hairSystem " ;
+$kx = `ls -type "hairSystem"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "follicle " ;
+$kx = `ls -type "follicle"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "particle " ;
+$kx = `ls -type "particle"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "pointEmitter " ;
+$kx = `ls -type "pointEmitter"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "cacheFile" ;
+$kx = `ls -type "cacheFile"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+$labelx = "DiskCache (Jiggle/Particles) " ;
+$kx = `ls -type "diskCache"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "joint" ;
+$kx = `ls -type "joint"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "aimConstraint" ;
+$kx = `ls -type "aimConstraint"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "pointConstraint " ;
+$kx = `ls -type "pointConstraint"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "orientConstraint" ;
+$kx = `ls -type "orientConstraint"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "scaleConstraint" ;
+$kx = `ls -type "scaleConstraint"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "ikHandle" ;
+$kx = `ls -type "ikHandle"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "ikEffector" ;
+$kx = `ls -type "ikEffector"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "SoftModification" ;
+$kx = `ls -type "softMod"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "cluster" ;
+$kx = `ls -type "cluster"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "jiggle" ;
+$kx = `ls -type "jiggle"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "wire" ;
+$kx = `ls -type "wire"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "wrap" ;
+$kx = `ls -type "wrap"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+$labelx = "lattice" ;
+$kx = `ls -type "lattice"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "baseLattice" ;
+$kx = `ls -type "baseLattice"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "Bend Deformer" ;
+$kx = `ls -type "deformBend"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "Flare Deformer" ;
+$kx = `ls -type "deformFlare"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "Sine Deformer" ;
+$kx = `ls -type "deformSine"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "Squash Deformer" ;
+$kx = `ls -type "deformSquash"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "Twist Deformer" ;
+$kx = `ls -type "deformTwist"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "Wave Deformer" ;
+$kx = `ls -type "deformWave"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+
+
+
+
+$labelx = "polyTransfer ";
+$kx = `ls -type "polyTransfer"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "polySmoothFace ";
+$kx = `ls -type "polySmoothFace"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+
+$labelx = "renderLayer " ;
+$kx = `ls -type "renderLayer"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+
+
+
+
+
+
+$labelx = "renderLayerManager " ;
+$kx = `ls -type "renderLayerManager"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "script " ;
+$kx = `ls -type "script"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+
+print ("----------------------------------------------------\n");
+
+
+
+
+
+
+
+
+
+
+$labelx = "imagePlane " ;
+$kx = `ls -type "imagePlane"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "Loft (Rivet) " ;
+$kx = `ls -type "loft"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "deleted Faces and Components" ;
+$kx = `ls -type "deleteComponent"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+ 
+
+
+$labelx = "multiplyDivide" ;
+$kx = `ls -type "multiplyDivide"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "strokes" ;
+$kx = `ls -type "stroke"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+
+
+$labelx = "mesh" ;
+$kx = `ls -type "mesh"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "camera" ;
+$kx = `ls -type "camera"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+
+
+$labelx = "instancer " ;
+$kx = `ls -type "instancer"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+
+$labelx = "ToonShades" ;
+$kx = `ls -type "pfxToon"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+
+$labelx = "opticalFX" ;
+$kx = `ls -type "opticalFX"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+$labelx = "ambientLight " ;
+$kx = `ls -type "ambientLight"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+$labelx = "areaLight" ;
+$kx = `ls -type "areaLight"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "volumeLight" ;
+$kx = `ls -type "volumeLight"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "spotLight " ;
+$kx = `ls -type "spotLight"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+
+$labelx = "pointLight " ;
+$kx = `ls -type "pointLight"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+
+
+
+$labelx = "directionalLight" ;
+$kx = `ls -type "directionalLight"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "Locators" ;
+$kx = `ls -type "locator"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+$labelx = "Curves" ;
+$kx = `ls -type "nurbsCurve"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+$labelx = "nurbsSurface" ;
+$kx = `ls -type "nurbsSurface"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+
+
+$labelx = "UserAnimKeyLinks" ;
+$kx = `ls -type "animCurveTA"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "SetDrivenKeyLinks" ;
+$kx = `ls -type "animCurveUU"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+$labelx = "partition" ;
+$kx = `ls -type "partition"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "blendShape" ;
+$kx = `ls -type "blendShape"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+
+$labelx = "envBalls" ;
+$kx = `ls -type "envBall"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+
+$labelx = "curveInfo" ;
+$kx = `ls -type "curveInfo"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "dagPose (Bindpose)" ;
+$kx = `ls -type "dagPose"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+
+
+$labelx = "cameraView" ;
+$kx = `ls -type "cameraView"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "cluster" ;
+$kx = `ls -type "cluster"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+
+
+$labelx = "bump3d" ;
+$kx = `ls -type "bump3d"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "bump2d" ;
+$kx = `ls -type "bump2d"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+$labelx = "place2dTexture" ;
+$kx = `ls -type "place2dTexture"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+
+$labelx = "phong" ;
+$kx = `ls -type "phong"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+$labelx = "blinn" ;
+$kx = `ls -type "blinn"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+$labelx = "lambert" ;
+$kx = `ls -type "lambert"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+$labelx = "ramp" ;
+$kx = `ls -type "ramp"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+$labelx = "rampShaders" ;
+$kx = `ls -type "rampShader"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+
+$labelx = "skinCluster" ;
+$kx = `ls -type "skinCluster"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+
+
+
+$labelx = "Image file" ;
+$kx = `ls -type "file"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+$labelx = "expression" ;
+$kx = `ls -type "expression"`;
+
+int $cnt = `size($kx)`;
+print ("No.of " + $labelx + " \t\t\t\t" + $cnt + "\n");
+print ("----------------------------------------------------\n");
+
+
+

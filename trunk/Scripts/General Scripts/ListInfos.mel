@@ -1,0 +1,7 @@
+print "\nCameras: ";
+string $k[] = `ls -typ "camera"`;
+print $k;
+
+print "\nRenerLayers: ";
+string $k[] = `ls -typ "renderLayer"`;
+print $k;
